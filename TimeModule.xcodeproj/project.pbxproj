@@ -1,0 +1,642 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		623A729F2934FE6200809A06 /* TransparentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 623A729E2934FE6200809A06 /* TransparentView.xib */; };
+		623A72A12934FE7100809A06 /* TransparentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623A72A02934FE7100809A06 /* TransparentView.swift */; };
+		6269DA14292F9AD500E7179D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6269DA13292F9AD500E7179D /* AppDelegate.swift */; };
+		6269DA16292F9AD500E7179D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6269DA15292F9AD500E7179D /* SceneDelegate.swift */; };
+		6269DA1D292F9ADF00E7179D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6269DA1C292F9ADF00E7179D /* Assets.xcassets */; };
+		6269DA20292F9ADF00E7179D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6269DA1E292F9ADF00E7179D /* LaunchScreen.storyboard */; };
+		6269DA39292F9B7900E7179D /* ExtentionClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6269DA2F292F9B7900E7179D /* ExtentionClasses.swift */; };
+		6269DA3A292F9B7900E7179D /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6269DA30292F9B7900E7179D /* Device.swift */; };
+		6269DA3B292F9B7900E7179D /* ClsSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6269DA32292F9B7900E7179D /* ClsSingleton.swift */; };
+		6269DA3C292F9B7900E7179D /* GlobalStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6269DA33292F9B7900E7179D /* GlobalStrings.swift */; };
+		6269DA3D292F9B7900E7179D /* FunctionsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6269DA34292F9B7900E7179D /* FunctionsHelper.swift */; };
+		6269DA3E292F9B7900E7179D /* StyleLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6269DA36292F9B7900E7179D /* StyleLibrary.swift */; };
+		6269DA43292F9C7A00E7179D /* NixelQueue.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6269DA42292F9C7A00E7179D /* NixelQueue.framework */; };
+		6269DA44292F9C7A00E7179D /* NixelQueue.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6269DA42292F9C7A00E7179D /* NixelQueue.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6269DA4B292F9D5100E7179D /* TimeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6269DA4A292F9D5100E7179D /* TimeViewController.xib */; };
+		6269DA4D292F9D7400E7179D /* TimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6269DA4C292F9D7400E7179D /* TimeViewController.swift */; };
+		6269DA56292FA53000E7179D /* TimeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6269DA54292FA53000E7179D /* TimeTableViewCell.swift */; };
+		6269DA57292FA53000E7179D /* TimeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6269DA55292FA53000E7179D /* TimeTableViewCell.xib */; };
+		6269DA5A292FA61600E7179D /* TimeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6269DA58292FA61600E7179D /* TimeDetailsViewController.swift */; };
+		6269DA5B292FA61600E7179D /* TimeDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6269DA59292FA61600E7179D /* TimeDetailsViewController.xib */; };
+		6269DA5E292FA66C00E7179D /* AddTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6269DA5C292FA66C00E7179D /* AddTimeViewController.swift */; };
+		6269DA5F292FA66C00E7179D /* AddTimeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6269DA5D292FA66C00E7179D /* AddTimeViewController.xib */; };
+		627278D329347FA800F6DDDE /* CommonAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627278CE29347FA800F6DDDE /* CommonAlert.swift */; };
+		627278D429347FA800F6DDDE /* NetworkErrorAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627278CF29347FA800F6DDDE /* NetworkErrorAlertView.swift */; };
+		627278D529347FA800F6DDDE /* AlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 627278D029347FA800F6DDDE /* AlertView.xib */; };
+		627278D629347FA800F6DDDE /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627278D129347FA800F6DDDE /* AlertView.swift */; };
+		627278D729347FA800F6DDDE /* NetworkErrorAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 627278D229347FA800F6DDDE /* NetworkErrorAlertView.xib */; };
+		62C0B0652930B07600CB36D1 /* HomeDatePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62C0B0632930B07600CB36D1 /* HomeDatePickerView.xib */; };
+		62C0B0662930B07600CB36D1 /* HomeDatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C0B0642930B07600CB36D1 /* HomeDatePickerView.swift */; };
+		62C542A9292FB7B500C9A398 /* TimeDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C542A8292FB7B500C9A398 /* TimeDataModel.swift */; };
+		62C542AB292FB80300C9A398 /* TimeLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C542AA292FB80300C9A398 /* TimeLogic.swift */; };
+		62CBD14229471AC00097B7AC /* VIsualPanelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CBD13B29471AC00097B7AC /* VIsualPanelTableViewCell.swift */; };
+		62CBD14329471AC00097B7AC /* VIsualPanelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62CBD13C29471AC00097B7AC /* VIsualPanelTableViewCell.xib */; };
+		62CBD14429471AC00097B7AC /* WenoiVisualPanelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CBD13E29471AC00097B7AC /* WenoiVisualPanelModel.swift */; };
+		62CBD14529471AC00097B7AC /* WenoiVisualPanelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62CBD14029471AC00097B7AC /* WenoiVisualPanelView.xib */; };
+		62CBD14629471AC00097B7AC /* WenoiVisualPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CBD14129471AC00097B7AC /* WenoiVisualPanelView.swift */; };
+		62CBD14829471AF00097B7AC /* AlwaysShowPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CBD14729471AF00097B7AC /* AlwaysShowPopup.swift */; };
+		62CBD14F29471BAC0097B7AC /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CBD14B29471BAC0097B7AC /* DatePickerViewController.swift */; };
+		62CBD15029471BAC0097B7AC /* DatePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62CBD14C29471BAC0097B7AC /* DatePickerViewController.xib */; };
+		62CBD15129471BAC0097B7AC /* FunctionalDateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CBD14D29471BAC0097B7AC /* FunctionalDateView.swift */; };
+		62CBD15229471BAC0097B7AC /* FunctionalDateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62CBD14E29471BAC0097B7AC /* FunctionalDateView.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6269DA45292F9C7A00E7179D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6269DA44292F9C7A00E7179D /* NixelQueue.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		623A729E2934FE6200809A06 /* TransparentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransparentView.xib; sourceTree = "<group>"; };
+		623A72A02934FE7100809A06 /* TransparentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransparentView.swift; sourceTree = "<group>"; };
+		6269DA10292F9AD500E7179D /* TimeModule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeModule.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6269DA13292F9AD500E7179D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6269DA15292F9AD500E7179D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6269DA1C292F9ADF00E7179D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6269DA1F292F9ADF00E7179D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6269DA21292F9AE000E7179D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6269DA2F292F9B7900E7179D /* ExtentionClasses.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtentionClasses.swift; sourceTree = "<group>"; };
+		6269DA30292F9B7900E7179D /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		6269DA32292F9B7900E7179D /* ClsSingleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClsSingleton.swift; sourceTree = "<group>"; };
+		6269DA33292F9B7900E7179D /* GlobalStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalStrings.swift; sourceTree = "<group>"; };
+		6269DA34292F9B7900E7179D /* FunctionsHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionsHelper.swift; sourceTree = "<group>"; };
+		6269DA36292F9B7900E7179D /* StyleLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleLibrary.swift; sourceTree = "<group>"; };
+		6269DA42292F9C7A00E7179D /* NixelQueue.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NixelQueue.framework; sourceTree = "<group>"; };
+		6269DA4A292F9D5100E7179D /* TimeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimeViewController.xib; sourceTree = "<group>"; };
+		6269DA4C292F9D7400E7179D /* TimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeViewController.swift; sourceTree = "<group>"; };
+		6269DA54292FA53000E7179D /* TimeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTableViewCell.swift; sourceTree = "<group>"; };
+		6269DA55292FA53000E7179D /* TimeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeTableViewCell.xib; sourceTree = "<group>"; };
+		6269DA58292FA61600E7179D /* TimeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeDetailsViewController.swift; sourceTree = "<group>"; };
+		6269DA59292FA61600E7179D /* TimeDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeDetailsViewController.xib; sourceTree = "<group>"; };
+		6269DA5C292FA66C00E7179D /* AddTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTimeViewController.swift; sourceTree = "<group>"; };
+		6269DA5D292FA66C00E7179D /* AddTimeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddTimeViewController.xib; sourceTree = "<group>"; };
+		627278CE29347FA800F6DDDE /* CommonAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonAlert.swift; sourceTree = "<group>"; };
+		627278CF29347FA800F6DDDE /* NetworkErrorAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkErrorAlertView.swift; sourceTree = "<group>"; };
+		627278D029347FA800F6DDDE /* AlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlertView.xib; sourceTree = "<group>"; };
+		627278D129347FA800F6DDDE /* AlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		627278D229347FA800F6DDDE /* NetworkErrorAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NetworkErrorAlertView.xib; sourceTree = "<group>"; };
+		62C0B0632930B07600CB36D1 /* HomeDatePickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeDatePickerView.xib; sourceTree = "<group>"; };
+		62C0B0642930B07600CB36D1 /* HomeDatePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDatePickerView.swift; sourceTree = "<group>"; };
+		62C542A8292FB7B500C9A398 /* TimeDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeDataModel.swift; sourceTree = "<group>"; };
+		62C542AA292FB80300C9A398 /* TimeLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLogic.swift; sourceTree = "<group>"; };
+		62CBD13B29471AC00097B7AC /* VIsualPanelTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VIsualPanelTableViewCell.swift; sourceTree = "<group>"; };
+		62CBD13C29471AC00097B7AC /* VIsualPanelTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VIsualPanelTableViewCell.xib; sourceTree = "<group>"; };
+		62CBD13E29471AC00097B7AC /* WenoiVisualPanelModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WenoiVisualPanelModel.swift; sourceTree = "<group>"; };
+		62CBD14029471AC00097B7AC /* WenoiVisualPanelView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WenoiVisualPanelView.xib; sourceTree = "<group>"; };
+		62CBD14129471AC00097B7AC /* WenoiVisualPanelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WenoiVisualPanelView.swift; sourceTree = "<group>"; };
+		62CBD14729471AF00097B7AC /* AlwaysShowPopup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlwaysShowPopup.swift; sourceTree = "<group>"; };
+		62CBD14B29471BAC0097B7AC /* DatePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		62CBD14C29471BAC0097B7AC /* DatePickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DatePickerViewController.xib; sourceTree = "<group>"; };
+		62CBD14D29471BAC0097B7AC /* FunctionalDateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionalDateView.swift; sourceTree = "<group>"; };
+		62CBD14E29471BAC0097B7AC /* FunctionalDateView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FunctionalDateView.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6269DA0D292F9AD500E7179D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6269DA43292F9C7A00E7179D /* NixelQueue.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		620EC23229308927007E87ED /* TimeCell */ = {
+			isa = PBXGroup;
+			children = (
+				6269DA55292FA53000E7179D /* TimeTableViewCell.xib */,
+				6269DA54292FA53000E7179D /* TimeTableViewCell.swift */,
+			);
+			path = TimeCell;
+			sourceTree = "<group>";
+		};
+		620EC23329308934007E87ED /* TimeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				620EC23229308927007E87ED /* TimeCell */,
+				6269DA4A292F9D5100E7179D /* TimeViewController.xib */,
+				6269DA4C292F9D7400E7179D /* TimeViewController.swift */,
+			);
+			path = TimeViewController;
+			sourceTree = "<group>";
+		};
+		620EC23429308958007E87ED /* TimeDetailsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6269DA59292FA61600E7179D /* TimeDetailsViewController.xib */,
+				6269DA58292FA61600E7179D /* TimeDetailsViewController.swift */,
+			);
+			path = TimeDetailsViewController;
+			sourceTree = "<group>";
+		};
+		620EC23529308965007E87ED /* AddOrEditTimeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6269DA5D292FA66C00E7179D /* AddTimeViewController.xib */,
+				6269DA5C292FA66C00E7179D /* AddTimeViewController.swift */,
+			);
+			path = AddOrEditTimeViewController;
+			sourceTree = "<group>";
+		};
+		6269DA07292F9AD500E7179D = {
+			isa = PBXGroup;
+			children = (
+				6269DA12292F9AD500E7179D /* TimeModule */,
+				6269DA11292F9AD500E7179D /* Products */,
+				6269DA41292F9C7A00E7179D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6269DA11292F9AD500E7179D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6269DA10292F9AD500E7179D /* TimeModule.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6269DA12292F9AD500E7179D /* TimeModule */ = {
+			isa = PBXGroup;
+			children = (
+				6269DA13292F9AD500E7179D /* AppDelegate.swift */,
+				6269DA15292F9AD500E7179D /* SceneDelegate.swift */,
+				62CBD14729471AF00097B7AC /* AlwaysShowPopup.swift */,
+				62CBD14929471BAC0097B7AC /* FunctionalDatePicker */,
+				62CBD13929471AC00097B7AC /* VisualPanel */,
+				627278CD29347FA800F6DDDE /* OasisAlert */,
+				62C0B0622930B07600CB36D1 /* DatePickerView */,
+				6269DA2E292F9B7900E7179D /* Resources */,
+				6269DA35292F9B7900E7179D /* Styles Group */,
+				6269DA31292F9B7900E7179D /* Singleton */,
+				6269DA2B292F9B7900E7179D /* LogicGroup */,
+				6269DA52292F9DEF00E7179D /* TimeList */,
+				6269DA1C292F9ADF00E7179D /* Assets.xcassets */,
+				6269DA1E292F9ADF00E7179D /* LaunchScreen.storyboard */,
+				6269DA21292F9AE000E7179D /* Info.plist */,
+			);
+			path = TimeModule;
+			sourceTree = "<group>";
+		};
+		6269DA2B292F9B7900E7179D /* LogicGroup */ = {
+			isa = PBXGroup;
+			children = (
+				62C542A8292FB7B500C9A398 /* TimeDataModel.swift */,
+				62C542AA292FB80300C9A398 /* TimeLogic.swift */,
+			);
+			path = LogicGroup;
+			sourceTree = "<group>";
+		};
+		6269DA2E292F9B7900E7179D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6269DA2F292F9B7900E7179D /* ExtentionClasses.swift */,
+				6269DA30292F9B7900E7179D /* Device.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6269DA31292F9B7900E7179D /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				6269DA32292F9B7900E7179D /* ClsSingleton.swift */,
+				6269DA33292F9B7900E7179D /* GlobalStrings.swift */,
+				6269DA34292F9B7900E7179D /* FunctionsHelper.swift */,
+			);
+			path = Singleton;
+			sourceTree = "<group>";
+		};
+		6269DA35292F9B7900E7179D /* Styles Group */ = {
+			isa = PBXGroup;
+			children = (
+				6269DA36292F9B7900E7179D /* StyleLibrary.swift */,
+			);
+			path = "Styles Group";
+			sourceTree = "<group>";
+		};
+		6269DA41292F9C7A00E7179D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6269DA42292F9C7A00E7179D /* NixelQueue.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6269DA52292F9DEF00E7179D /* TimeList */ = {
+			isa = PBXGroup;
+			children = (
+				620EC23329308934007E87ED /* TimeViewController */,
+				620EC23429308958007E87ED /* TimeDetailsViewController */,
+				620EC23529308965007E87ED /* AddOrEditTimeViewController */,
+			);
+			path = TimeList;
+			sourceTree = "<group>";
+		};
+		627278CD29347FA800F6DDDE /* OasisAlert */ = {
+			isa = PBXGroup;
+			children = (
+				627278CE29347FA800F6DDDE /* CommonAlert.swift */,
+				627278CF29347FA800F6DDDE /* NetworkErrorAlertView.swift */,
+				627278D229347FA800F6DDDE /* NetworkErrorAlertView.xib */,
+				627278D129347FA800F6DDDE /* AlertView.swift */,
+				627278D029347FA800F6DDDE /* AlertView.xib */,
+			);
+			path = OasisAlert;
+			sourceTree = "<group>";
+		};
+		62C0B0622930B07600CB36D1 /* DatePickerView */ = {
+			isa = PBXGroup;
+			children = (
+				62C0B0632930B07600CB36D1 /* HomeDatePickerView.xib */,
+				62C0B0642930B07600CB36D1 /* HomeDatePickerView.swift */,
+				623A729E2934FE6200809A06 /* TransparentView.xib */,
+				623A72A02934FE7100809A06 /* TransparentView.swift */,
+			);
+			path = DatePickerView;
+			sourceTree = "<group>";
+		};
+		62CBD13929471AC00097B7AC /* VisualPanel */ = {
+			isa = PBXGroup;
+			children = (
+				62CBD13A29471AC00097B7AC /* Cell */,
+				62CBD13D29471AC00097B7AC /* Model */,
+				62CBD13F29471AC00097B7AC /* View */,
+			);
+			path = VisualPanel;
+			sourceTree = "<group>";
+		};
+		62CBD13A29471AC00097B7AC /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				62CBD13B29471AC00097B7AC /* VIsualPanelTableViewCell.swift */,
+				62CBD13C29471AC00097B7AC /* VIsualPanelTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		62CBD13D29471AC00097B7AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				62CBD13E29471AC00097B7AC /* WenoiVisualPanelModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		62CBD13F29471AC00097B7AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				62CBD14029471AC00097B7AC /* WenoiVisualPanelView.xib */,
+				62CBD14129471AC00097B7AC /* WenoiVisualPanelView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		62CBD14929471BAC0097B7AC /* FunctionalDatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				62CBD14A29471BAC0097B7AC /* DatePickerPresenter */,
+				62CBD14D29471BAC0097B7AC /* FunctionalDateView.swift */,
+				62CBD14E29471BAC0097B7AC /* FunctionalDateView.xib */,
+			);
+			path = FunctionalDatePicker;
+			sourceTree = "<group>";
+		};
+		62CBD14A29471BAC0097B7AC /* DatePickerPresenter */ = {
+			isa = PBXGroup;
+			children = (
+				62CBD14B29471BAC0097B7AC /* DatePickerViewController.swift */,
+				62CBD14C29471BAC0097B7AC /* DatePickerViewController.xib */,
+			);
+			path = DatePickerPresenter;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6269DA0F292F9AD500E7179D /* TimeModule */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6269DA24292F9AE000E7179D /* Build configuration list for PBXNativeTarget "TimeModule" */;
+			buildPhases = (
+				6269DA0C292F9AD500E7179D /* Sources */,
+				6269DA0D292F9AD500E7179D /* Frameworks */,
+				6269DA0E292F9AD500E7179D /* Resources */,
+				6269DA45292F9C7A00E7179D /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TimeModule;
+			productName = TimeModule;
+			productReference = 6269DA10292F9AD500E7179D /* TimeModule.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6269DA08292F9AD500E7179D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					6269DA0F292F9AD500E7179D = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = 6269DA0B292F9AD500E7179D /* Build configuration list for PBXProject "TimeModule" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6269DA07292F9AD500E7179D;
+			productRefGroup = 6269DA11292F9AD500E7179D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6269DA0F292F9AD500E7179D /* TimeModule */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6269DA0E292F9AD500E7179D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6269DA5B292FA61600E7179D /* TimeDetailsViewController.xib in Resources */,
+				623A729F2934FE6200809A06 /* TransparentView.xib in Resources */,
+				627278D529347FA800F6DDDE /* AlertView.xib in Resources */,
+				627278D729347FA800F6DDDE /* NetworkErrorAlertView.xib in Resources */,
+				6269DA5F292FA66C00E7179D /* AddTimeViewController.xib in Resources */,
+				6269DA20292F9ADF00E7179D /* LaunchScreen.storyboard in Resources */,
+				62CBD14529471AC00097B7AC /* WenoiVisualPanelView.xib in Resources */,
+				6269DA4B292F9D5100E7179D /* TimeViewController.xib in Resources */,
+				62C0B0652930B07600CB36D1 /* HomeDatePickerView.xib in Resources */,
+				62CBD14329471AC00097B7AC /* VIsualPanelTableViewCell.xib in Resources */,
+				62CBD15029471BAC0097B7AC /* DatePickerViewController.xib in Resources */,
+				62CBD15229471BAC0097B7AC /* FunctionalDateView.xib in Resources */,
+				6269DA1D292F9ADF00E7179D /* Assets.xcassets in Resources */,
+				6269DA57292FA53000E7179D /* TimeTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6269DA0C292F9AD500E7179D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				623A72A12934FE7100809A06 /* TransparentView.swift in Sources */,
+				6269DA56292FA53000E7179D /* TimeTableViewCell.swift in Sources */,
+				6269DA14292F9AD500E7179D /* AppDelegate.swift in Sources */,
+				62C0B0662930B07600CB36D1 /* HomeDatePickerView.swift in Sources */,
+				62CBD14229471AC00097B7AC /* VIsualPanelTableViewCell.swift in Sources */,
+				6269DA5A292FA61600E7179D /* TimeDetailsViewController.swift in Sources */,
+				6269DA4D292F9D7400E7179D /* TimeViewController.swift in Sources */,
+				6269DA3E292F9B7900E7179D /* StyleLibrary.swift in Sources */,
+				6269DA3C292F9B7900E7179D /* GlobalStrings.swift in Sources */,
+				62C542AB292FB80300C9A398 /* TimeLogic.swift in Sources */,
+				62CBD14429471AC00097B7AC /* WenoiVisualPanelModel.swift in Sources */,
+				6269DA5E292FA66C00E7179D /* AddTimeViewController.swift in Sources */,
+				62CBD14629471AC00097B7AC /* WenoiVisualPanelView.swift in Sources */,
+				62C542A9292FB7B500C9A398 /* TimeDataModel.swift in Sources */,
+				62CBD15129471BAC0097B7AC /* FunctionalDateView.swift in Sources */,
+				627278D429347FA800F6DDDE /* NetworkErrorAlertView.swift in Sources */,
+				627278D629347FA800F6DDDE /* AlertView.swift in Sources */,
+				6269DA39292F9B7900E7179D /* ExtentionClasses.swift in Sources */,
+				6269DA3B292F9B7900E7179D /* ClsSingleton.swift in Sources */,
+				6269DA3D292F9B7900E7179D /* FunctionsHelper.swift in Sources */,
+				62CBD14829471AF00097B7AC /* AlwaysShowPopup.swift in Sources */,
+				62CBD14F29471BAC0097B7AC /* DatePickerViewController.swift in Sources */,
+				627278D329347FA800F6DDDE /* CommonAlert.swift in Sources */,
+				6269DA3A292F9B7900E7179D /* Device.swift in Sources */,
+				6269DA16292F9AD500E7179D /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6269DA1E292F9ADF00E7179D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6269DA1F292F9ADF00E7179D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6269DA22292F9AE000E7179D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6269DA23292F9AE000E7179D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6269DA25292F9AE000E7179D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VG2S98FFS9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = TimeModule/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shivakumarpgk.TimeModule;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6269DA26292F9AE000E7179D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VG2S98FFS9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = TimeModule/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shivakumarpgk.TimeModule;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6269DA0B292F9AD500E7179D /* Build configuration list for PBXProject "TimeModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6269DA22292F9AE000E7179D /* Debug */,
+				6269DA23292F9AE000E7179D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6269DA24292F9AE000E7179D /* Build configuration list for PBXNativeTarget "TimeModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6269DA25292F9AE000E7179D /* Debug */,
+				6269DA26292F9AE000E7179D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6269DA08292F9AD500E7179D /* Project object */;
+}

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TimeViewController" customModule="TimeModule" customModuleProvider="target">
+            <connections>
+                <outlet property="datePickerView" destination="0VP-bq-ZB3" id="CcP-kk-FRf"/>
+                <outlet property="noDataFoundLabel" destination="6sh-27-DFZ" id="Rma-ZP-tFH"/>
+                <outlet property="searchBar" destination="9x1-ry-Y4F" id="Acw-0F-zWZ"/>
+                <outlet property="timeListTableView" destination="Usd-pU-rKS" id="UwS-B7-l1W"/>
+                <outlet property="totalTimeLabel" destination="Rn3-ow-qVV" id="oz8-35-DWF"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0VP-bq-ZB3" customClass="FunctionalDateView" customModule="TimeModule" customModuleProvider="target">
+                    <rect key="frame" x="94.5" y="49" width="225" height="50"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="225" id="b3G-2B-WFr"/>
+                        <constraint firstAttribute="height" constant="50" placeholder="YES" id="xtV-Je-UxE"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rn3-ow-qVV">
+                    <rect key="frame" x="329.5" y="64" width="74.5" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="9x1-ry-Y4F">
+                    <rect key="frame" x="10" y="109" width="394" height="56"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Usd-pU-rKS">
+                    <rect key="frame" x="10" y="170" width="394" height="682"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Time Available !" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6sh-27-DFZ">
+                    <rect key="frame" x="135" y="437.5" width="144.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Usd-pU-rKS" secondAttribute="bottom" constant="10" id="7Ao-Q6-Soc"/>
+                <constraint firstItem="Rn3-ow-qVV" firstAttribute="centerY" secondItem="0VP-bq-ZB3" secondAttribute="centerY" id="7Pf-SO-ho9"/>
+                <constraint firstItem="Usd-pU-rKS" firstAttribute="top" secondItem="9x1-ry-Y4F" secondAttribute="bottom" constant="5" id="Bk5-XL-nd0"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Rn3-ow-qVV" secondAttribute="trailing" constant="10" id="Ljf-Gz-HQS"/>
+                <constraint firstItem="0VP-bq-ZB3" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="5" id="Qe2-nD-Er2"/>
+                <constraint firstItem="9x1-ry-Y4F" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="WtL-bb-vJA"/>
+                <constraint firstItem="9x1-ry-Y4F" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" constant="-10" id="XLn-Ie-ZnJ"/>
+                <constraint firstItem="6sh-27-DFZ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="bXj-OS-X6q"/>
+                <constraint firstItem="6sh-27-DFZ" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="dbr-iv-V7z"/>
+                <constraint firstItem="Rn3-ow-qVV" firstAttribute="leading" secondItem="0VP-bq-ZB3" secondAttribute="trailing" constant="10" id="nZ3-Zi-Mel"/>
+                <constraint firstItem="9x1-ry-Y4F" firstAttribute="top" secondItem="0VP-bq-ZB3" secondAttribute="bottom" constant="10" id="r6r-Dh-PNO"/>
+                <constraint firstItem="0VP-bq-ZB3" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="sV3-4C-bML"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Usd-pU-rKS" secondAttribute="trailing" constant="10" id="vpf-xB-vHH"/>
+                <constraint firstItem="Usd-pU-rKS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="wu3-SC-nCv"/>
+            </constraints>
+            <point key="canvasLocation" x="-204.34782608695653" y="73.660714285714278"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

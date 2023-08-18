@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DatePickerViewController" customModule="WenoiUI" customModuleProvider="target">
+            <connections>
+                <outlet property="datePickerView" destination="qbd-3g-7dZ" id="nY6-Mr-Rmz"/>
+                <outlet property="saveButton" destination="vcd-Gh-4ZR" id="N2U-lx-eKu"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="541"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="inline" translatesAutoresizingMaskIntoConstraints="NO" id="qbd-3g-7dZ">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="408"/>
+                </datePicker>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vcd-Gh-4ZR">
+                    <rect key="frame" x="157" y="491" width="100" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="g5D-mK-fg3"/>
+                        <constraint firstAttribute="height" constant="40" id="vDp-JT-TR0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                    <state key="normal" title="Done">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                    </variation>
+                    <connections>
+                        <action selector="onSaveButtonTapped:" destination="-1" eventType="touchUpInside" id="hqD-eh-6cI"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vcd-Gh-4ZR" firstAttribute="top" relation="greaterThanOrEqual" secondItem="qbd-3g-7dZ" secondAttribute="bottom" id="5xo-Nx-OQ1"/>
+                <constraint firstAttribute="trailing" secondItem="qbd-3g-7dZ" secondAttribute="trailing" id="A8W-1P-jw2"/>
+                <constraint firstItem="qbd-3g-7dZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Oyd-xS-YVm"/>
+                <constraint firstItem="qbd-3g-7dZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="haW-wr-fg0"/>
+                <constraint firstAttribute="bottom" secondItem="vcd-Gh-4ZR" secondAttribute="bottom" constant="10" id="rBN-zK-3FY"/>
+                <constraint firstItem="vcd-Gh-4ZR" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="yvq-YQ-dYG"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="137.68115942028987" y="-23.102678571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
